@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="back.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="hitSound">
+        <source src="https://www.soundjay.com/buttons/button-4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="game-container">
+        <canvas id="myCanvas" width="600" height="400"></canvas>
+        <div class="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="restartBtn" style="display: none;">Restart</button>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <select id="mode">
+                <option value="normal">一般模式</option>
+                <option value="timeChallenge">時間挑戰模式</option>
+            </select>
+            <p id="timerDisplay" style="display:none;">Time: <span id="timeRemaining">60</span></p>
+            
+        </div>
+        <div class="score-container">
+            <span id="scoreDisplay">Score: 0</span>
+            <span id="livesDisplay">Lives: 3</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

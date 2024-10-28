@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    border: 5px solid #0095DD; /* Add a border */
+    padding: 20px;
+    background-color: white; /* Background color for the game area */
+    text-align: center; /* Center contents */
+}
+
+canvas {
+    display: block; /* Center canvas */
+    margin: 0 auto; /* Center the canvas horizontally */
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.score-container {
+    margin-top: 10px;
+    font-size: 18px;
+}
